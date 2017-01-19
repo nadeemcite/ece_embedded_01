@@ -1,0 +1,96 @@
+
+>>> a="xyz"
+>>> a
+'xyz'
+>>> a*2
+'xyzxyz'
+>>> a+3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+>>> a[0]
+'x'
+>>> a[1]
+'y'
+>>> a[2]
+'z'
+>>> a[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> a="nadeem"
+>>> a[4]
+'e'
+>>> a[5]
+'m'
+>>> a[2]
+'d'
+>>> a[-1]
+'m'
+>>> a[-2]
+'e'
+>>> a[-6]
+'n'
+>>> a[-7]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> a[0:2]
+'na'
+>>> a[0:3]
+'nad'
+>>> a[2:3]
+'d'
+>>> a[-3:-4]
+''
+>>> a[-6:-4]
+'na'
+>>> a[3:]
+'eem'
+>>> a[:4]
+'nade'
+>>> reverse(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'reverse' is not defined
+>>> rev(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'rev' is not defined
+>>> upper(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'upper' is not defined
+>>> toUpper(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'toUpper' is not defined
+>>>
+>>> a.upper()
+'NADEEM'
+>>> b.lower()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b' is not defined
+>>> a.lower()
+'nadeem'
+>>> a.reverse()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'reverse'
+>>> a.rev()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'rev'
+>>> a="abcdefGhijkl"
+>>> a
+'abcdefGhijkl'
+>>> a.upper()
+'ABCDEFGHIJKL'
+>>> a.lower()
+'abcdefghijkl'
+>>> a.upper()[0:3]
+'ABC'
+>>> a.lower()[0:3]
+'abc'
+>>>
