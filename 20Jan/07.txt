@@ -1,0 +1,225 @@
+
+D:\sigec\ece_embedded_01\20Jan>python 01.py
+Number is not 6
+
+D:\sigec\ece_embedded_01\20Jan>python 01.py
+Number is not 6
+6 is absent
+
+D:\sigec\ece_embedded_01\20Jan>python 01.py
+Number is not 6
+6 is present
+
+D:\sigec\ece_embedded_01\20Jan>python 01.py
+Number is not 6
+3 is present
+
+D:\sigec\ece_embedded_01\20Jan>python 02.py
+Its not 6
+
+D:\sigec\ece_embedded_01\20Jan>python 02.py
+Its not 6
+3 is present
+
+D:\sigec\ece_embedded_01\20Jan>python 03.py
+1
+2
+3
+4
+5
+6
+
+D:\sigec\ece_embedded_01\20Jan>python 03.py
+1
+2
+3
+4
+5
+6
+400
+200
+600
+700
+800
+100
+0
+
+D:\sigec\ece_embedded_01\20Jan>python 03.py
+1
+2
+3
+4
+5
+6
+700
+800
+100
+
+D:\sigec\ece_embedded_01\20Jan>python 04.py
+Enter a number 6
+6
+12
+18
+24
+30
+36
+42
+48
+54
+60
+
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+x= 0 y= 0
+x= 2 y= 0
+x= 2 y= 2
+x= 0 y= 2
+
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+value of x is 0 y= 0
+value of x is 2 y= 0
+value of x is 2 y= 2
+value of x is 0 y= 2
+
+D:\sigec\ece_embedded_01\20Jan>
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+value of x is 0 y= 0
+value of x is 2 y= 0
+value of x is 2 y=
+Traceback (most recent call last):
+  File "05.py", line 3, in <module>
+    print "value of x is",point['x'],"y=",point['y']
+KeyError: 'y'
+
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+value of x is 0 y= 0
+value of x is 2 y= 0
+value of x is 2 y= 2
+value of x is 0 y= 2
+
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+value of x is 0
+value of x is 2
+value of x is 2
+value of x is 0
+
+D:\sigec\ece_embedded_01\20Jan>python 05.py
+value of x is 0
+value of x is 2
+value of x is 2
+value of x is 0
+
+D:\sigec\ece_embedded_01\20Jan>python 06.py
+  File "06.py", line 2
+    [print x for x in a]
+         ^
+SyntaxError: invalid syntax
+
+D:\sigec\ece_embedded_01\20Jan>python 06.py
+  File "06.py", line 2
+    print x for x in a
+              ^
+SyntaxError: invalid syntax
+
+D:\sigec\ece_embedded_01\20Jan>python 06.py
+
+D:\sigec\ece_embedded_01\20Jan>python
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=[1,2,3,4,5]
+>>> x for x in a
+  File "<stdin>", line 1
+    x for x in a
+        ^
+SyntaxError: invalid syntax
+>>> [x for x in a]
+[1, 2, 3, 4, 5]
+>>> [x*2 for x in a]
+[2, 4, 6, 8, 10]
+>>> x=[x*2 for x in a]
+>>> x
+[2, 4, 6, 8, 10]
+>>> a
+[1, 2, 3, 4, 5]
+>>> b=[x*2 for x in a]
+>>> a
+[1, 2, 3, 4, 5]
+>>> b
+[2, 4, 6, 8, 10]
+>>> a=[1,9,25,16]
+>>> import math
+>>> math.sqrt(10)
+3.1622776601683795
+>>> [math.sqrt(x) for x in a]
+[1.0, 3.0, 5.0, 4.0]
+>>> a=[[1,2],[3,4],[5,6],[7,8]]
+>>> [ x[0]+x[1] for x in a]
+[3, 7, 11, 15]
+>>> b=[(1,1),(2,2),(3,3),(4,4)]
+>>> x=[1,2,3]
+>>> y=
+  File "<stdin>", line 1
+    y=
+     ^
+SyntaxError: invalid syntax
+>>> y=(1,2,3)
+>>> x
+[1, 2, 3]
+>>> y
+(1, 2, 3)
+>>> x[0]=100
+>>> x
+[100, 2, 3]
+>>> y[0]=100
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> y
+(1, 2, 3)
+>>> x
+[100, 2, 3]
+>>> b
+[(1, 1), (2, 2), (3, 3), (4, 4)]
+>>> [ x[0]*x[0]+x[1]*x[1] for x in b]
+[2, 8, 18, 32]
+>>> [ x[0]**2+x[1]**2 for x in b]
+[2, 8, 18, 32]
+>>> 3**10
+59049
+>>> 
+>>> [1,2,3,4,5,6,7,8,9,10]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> a=[2,5,6,1,6,9,17]
+>>> a
+[2, 5, 6, 1, 6, 9, 17]
+>>> x=109
+>>> x/2
+54
+>>> x%2
+1
+>>> x=108
+>>> x%2
+0
+>>> x%2==0
+True
+>>> x=109
+>>> x%2==0
+False
+>>> x&1
+1
+>>> x
+109
+>>> x=100
+>>> x&1
+0
+>>> x&1==0
+True
+>>> x=109
+>>> x&1==0
+False
+>>> x=[12,13,56,11,6,8]
+>>> a=[12,13,56,11,6,8]
+>>> [x for x in a if x%2==0]
+[12, 56, 6, 8]
+>>> [x/2 for x in a if x%2==0]
+[6, 28, 3, 4]
+>>>
